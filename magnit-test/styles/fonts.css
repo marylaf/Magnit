@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'Golos';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/AnyConv.com__golostext_regular.woff2') format('woff2'),
+    url('./fonts/golostext_regular.woff') format('woff'),
+    url('./fonts/golostext_regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Golos';
+  font-style: normal;
+  font-weight: 500;
+  src: url('./fonts/AnyConv.com__golostext_medium.woff2') format('woff2'),
+  url('./fonts/golostext_medium.woff') format('woff'),
+  url('./fonts/golostext_medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Golos';
+  font-style: normal;
+  font-weight: 600;
+  src: url('./fonts/AnyConv.com__golostext_demibold.woff2') format('woff2'),
+    url('./fonts/golostext_demibold.woff') format('woff'), 
+    url('./fonts/golostext_demibold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Golos';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./fonts/AnyConv.com__golostext_bold.woff2') format('woff2'),
+    url('./fonts/golostext_bold.woff') format('woff'), 
+    url('./fonts/golostext_bold.ttf') format('truetype');
+}
