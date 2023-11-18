@@ -4,16 +4,67 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stickers</title>
+    <link rel="stylesheet" href="styles/index.css" />
   </head>
-  <body>
-    <main>
-      <section class="slider">
-        <div class="info"></div>
+  <body class="page">
+    <main class="main">
+      <section class="image-block">
+        <div class="info">
+            <h1 class="info__title">Движун</h1>
+            <p class="info__subtitle">Танцевать где угодно и когда угодно — первое правило хорошего настроения от Движуна. Если вам немного взгрустнулось, то скорее лепите его на одежду и начинайте дэнсить</p>
+        </div>
+        <div class="slider">
+          <button class="slider__icon slider__icon_type_left"> <img src="/images/left.svg"/></button>
+          <button class="slider__icon slider__icon_type_right"> <img src="/images/right.svg"/></button>
+          <img class="slider__image" src="/images/cat.svg"/>
+        </div>
       </section>
       <section class="table">
-        <div class="table__container"></div>
-        
+        <div class="table__container">
+          <div class="cell cell_type_moon">
+            <img class="cell__image" src="/images/polnolun.svg"/>
+            <h2 class="cell__title">Полнолун</h2>
+          </div>
+          <div class="cell cell_type_fire">
+            <img class="cell__image" src="/images/fire.svg"/>
+            <h2 class="cell__title">Ааагонь</h2>
+          </div>
+          <div class="cell cell_type_meal">
+            <img class="cell__image" src="/images/meal.svg"/>
+            <h2 class="cell__title">Ееедаа</h2>
+          </div>
+          <div class="cell cell_type_chill">
+            <img class="cell__image" src="/images/chill.svg"/>
+            <h2 class="cell__title">На чиле</h2>
+          </div>
+          <div class="cell cell_type_dog">
+            <img class="cell__image" src="/images/dog.svg"/>
+            <h2 class="cell__title">Поп Дог</h2>
+          </div>
+          <div class="cell cell_type_cat">
+            <img class="cell__image" src="/images/cats.svg"/>
+            <h2 class="cell__title">Кить-коть</h2>
+          </div>
+          <div class="cell cell_type_pink">
+            <img class="cell__image" src="/images/pink.svg"/>
+            <h2 class="cell__title">Пинк Пу</h2>
+          </div>
+          <div class="cell cell_type_dumpling">
+            <img class="cell__image" src="/images/dumpling.svg"/>
+            <h2 class="cell__title">Пельмешка</h2>
+          </div>
+          <div class="cell cell_type_mask">
+            <img class="cell__image" src="/images/mask.svg"/>
+            <h2 class="cell__title">Маска</h2>
+          </div>
+        </div>
+          <button class="button">
+            <img class="button__icon" src="/images/Watches.svg"/>
+            <p class="button__subtitle">Посмотреть все Стикерсы</p>
+          </button>
       </section>
     </main>
+    <script src="js/index.js"></script>
+  </body>
   </body>
 </html>

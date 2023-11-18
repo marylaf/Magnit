@@ -1,1 +1,279 @@
 @import url(fonts.css);
+
+.page {
+    font-family: "Golos";
+    margin: 0;
+}
+
+.main {
+    padding-top: 56px;
+    padding-bottom: 56px;
+    margin: 0 auto;
+    max-width: 1150px;
+}
+
+.info {
+    max-width: 574px;
+    margin-right: 112px;
+}
+
+.info__title {
+    color: #000;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 110%;
+    margin: 0;
+}
+
+.info__subtitle {
+    color: #000;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 150%; 
+    margin: 0;
+    padding-top: 16px;
+}
+
+.image-block {
+    display: flex;
+    justify-content: center;
+}
+
+.slider {
+    background-image: url('/images/back.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 467px;
+    height: 467px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.slider__image {
+    width: auto;
+    height: 329px;
+}
+
+.slider__icon {
+    position: absolute;
+    top: 50%;
+    background: none;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+}
+
+.slider__icon_type_left {
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+
+.slider__icon_type_right{
+    right: 0;
+    transform: translate(50%, -50%);
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    background: none;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.button__icon {
+    margin-right: 16px;
+    width: 24px;
+    height: 24px;
+}
+
+.button__subtitle {
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+    margin: 0;
+}
+
+.table {
+    margin-top: 64px;
+}
+
+.table__container {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 32px;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+.cell {
+    flex: 0 0 auto;
+    width: 120px;
+    height: 118px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cell:last-child {
+    gap: 0;
+}
+
+.cell_type_moon {
+    background: #E7ECF3;
+}
+
+.cell_type_fire {
+    background: #F2D7FF;
+}
+
+.cell_type_meal {
+    background: #C3FFC9;
+}
+
+.cell_type_chill {
+    background: #FFEDCC;
+}
+
+.cell_type_dog {
+    background: #FFE1E1;
+}
+
+.cell_type_cat {
+    background: #D9E8FB;
+}
+
+.cell_type_pink {
+    background: #FFE1F0;
+}
+
+.cell_type_dumpling {
+    background: #FFE1E1;
+}
+
+.cell_type_mask {
+    background: #C3FFF4;
+}
+
+.cell__title {
+    margin: 0;
+    padding-top: 4px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.cell__image {
+    width: auto;
+    height: 64px;
+}
+
+@media screen and (max-width: 1279px) {
+    .main {
+        padding-top: 64px;
+        padding-bottom: 64px;
+        max-width: 720px;
+    }
+    
+    .info {
+        max-width: 640px;
+        margin-right: 0;
+        z-index: 5;
+        margin-top: 438px;
+    }
+    
+    .image-block {
+       flex-direction: column-reverse;
+       align-items: center;
+       text-align: center;
+       position: relative;
+    }
+
+    .table {
+        margin-top: 48px;
+    }
+
+    .slider {
+        position: absolute;
+        top: 0;
+    }
+
+    .cell {
+        width: 113px;
+    }
+
+    .slider__icon_type_left {
+        left: -95px;
+    }
+    
+    .slider__icon_type_right{
+        right: -95px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .main {
+        padding-top: 65px;
+        padding-bottom: 38px;
+        max-width: 328px;
+    }
+    
+    .info {
+        max-width: 296px;
+        margin-top: 304px;
+    }
+
+    .table {
+        margin-top: 55px;
+    }
+
+    .slider {
+        width: 319px;
+        height: 319px;
+        background-size: cover;
+    }
+
+    .slider__image {
+        width: 224px;
+        height: 224px;
+    }
+
+    .info__title {
+        font-size: 20px;
+        line-height: 120%;
+    }
+
+    .info__subtitle {
+        padding-top: 12px;
+        font-size: 14px;
+        line-height: 171%;
+    }
+
+    .cell {
+        width: 104px;
+    }
+
+    .slider__icon_type_left {
+        left: 0;
+        width: 36px;
+        height: 36px;
+    }
+    
+    .slider__icon_type_right{
+        right: 0;
+        width: 36px;
+        height: 36px;
+    }
+
+    .table__container {
+        flex-wrap: wrap;
+    }
+}
+
