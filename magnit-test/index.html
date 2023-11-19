@@ -1,70 +1,289 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stickers</title>
     <link rel="stylesheet" href="styles/index.css" />
+    <!-- <script src="dist/bundle.js"></script> -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   </head>
   <body class="page">
     <main class="main">
       <section class="image-block">
-        <div class="info">
-            <h1 class="info__title">Движун</h1>
-            <p class="info__subtitle">Танцевать где угодно и когда угодно — первое правило хорошего настроения от Движуна. Если вам немного взгрустнулось, то скорее лепите его на одежду и начинайте дэнсить</p>
-        </div>
-        <div class="slider">
-          <button class="slider__icon slider__icon_type_left"> <img class="icon" src="/images/left.svg"/></button>
-          <button class="slider__icon slider__icon_type_right"> <img class="icon" src="/images/right.svg"/></button>
-          <img class="slider__image" src="/images/cat.svg"/>
+        <div class="info"></div>
+        <div class="swiper-container">
+          <div class="swiper">
+            <div class="swiper-wrapper"></div>
+          </div>
+          <button class="swiper-button-prev"></button>
+          <button class="swiper-button-next"></button>
         </div>
       </section>
       <section class="table">
-        <div class="table__container">
-          <div class="cell cell_type_moon">
-            <img class="cell__image" src="/images/polnolun.svg"/>
-            <h2 class="cell__title">Полнолун</h2>
-          </div>
-          <div class="cell cell_type_fire">
-            <img class="cell__image" src="/images/fire.svg"/>
-            <h2 class="cell__title">Ааагонь</h2>
-          </div>
-          <div class="cell cell_type_meal">
-            <img class="cell__image" src="/images/meal.svg"/>
-            <h2 class="cell__title">Ееедаа</h2>
-          </div>
-          <div class="cell cell_type_chill">
-            <img class="cell__image" src="/images/chill.svg"/>
-            <h2 class="cell__title">На чиле</h2>
-          </div>
-          <div class="cell cell_type_dog">
-            <img class="cell__image" src="/images/dog.svg"/>
-            <h2 class="cell__title">Поп Дог</h2>
-          </div>
-          <div class="cell cell_type_cat">
-            <img class="cell__image" src="/images/cats.svg"/>
-            <h2 class="cell__title">Кить-коть</h2>
-          </div>
-          <div class="cell cell_type_pink">
-            <img class="cell__image" src="/images/pink.svg"/>
-            <h2 class="cell__title">Пинк Пу</h2>
-          </div>
-          <div class="cell cell_type_dumpling">
-            <img class="cell__image" src="/images/dumpling.svg"/>
-            <h2 class="cell__title">Пельмешка</h2>
-          </div>
-          <div class="cell cell_type_mask">
-            <img class="cell__image" src="/images/mask.svg"/>
-            <h2 class="cell__title">Маска</h2>
-          </div>
-        </div>
-          <button class="button">
-            <img class="button__icon" src="/images/Watches.svg"/>
-            <p class="button__subtitle">Посмотреть все Стикерсы</p>
-          </button>
+        <div class="table__container"></div>
+        <button class="button">
+          <img class="button__icon" src="/images/Watches.svg" />
+          <p class="button__subtitle">Посмотреть все Стикерсы</p>
+        </button>
       </section>
     </main>
-    <script src="js/index.js"></script>
-  </body>
+    <script>
+      const cards = [
+        {
+          id: 1,
+          title: "Движун",
+          imageSrc: "/images/cat.svg",
+          background: "#ffe1e1",
+          about:
+            "Танцевать где угодно и когда угодно — первое правило хорошего настроения от Движуна. Если вам немного взгрустнулось, то скорее лепите его на одежду и начинайте дэнсить",
+        },
+        {
+          id: 2,
+          title: "Полнолун",
+          imageSrc: "/images/polnolun.svg",
+          background: "#e7ecf3",
+          about:
+            "Полнолун — идеальное время для загадывания желаний и планирования новых начинаний. Этот символ наполнит вас вдохновением и магией лунного света.",
+        },
+        {
+          id: 3,
+          title: "Ааагонь",
+          imageSrc: "/images/fire.svg",
+          background: "#f2d7ff",
+          about:
+            "Ааагонь символизирует страсть и энергию. Если вам нужен заряд бодрости или искра для вдохновения, этот огонёк поможет разжечь ваши идеи.",
+        },
+        {
+          id: 4,
+          title: "Ееедаа",
+          imageSrc: "/images/meal.svg",
+          background: "#c3ffc9",
+          about:
+            "Ееедаа — настоящий гастрономический рай. Этот символ предназначен для любителей вкусной еды и уютных семейных ужинов.",
+        },
+        {
+          id: 5,
+          title: "На чиле",
+          imageSrc: "/images/chill.svg",
+          background: "#ffedcc",
+          about:
+            "На чиле — ваш напоминание о том, что порой нужно просто расслабиться. Отдых и покой — ключевые элементы для гармонии.",
+        },
+        {
+          id: 6,
+          title: "Поп Дог",
+          imageSrc: "/images/dog.svg",
+          background: "#ffe1e1",
+          about:
+            "Поп Дог — ваш верный друг в мире моды и стиля. Он всегда подскажет, как быть на пике поп-культуры.",
+        },
+        {
+          id: 7,
+          title: "Кить-коть",
+          imageSrc: "/images/cats.svg",
+          background: "#d9e8fb",
+          about:
+            "Кить-коть — символ мягкости и изящества. Он приносит уют и гармонию в любое пространство.",
+        },
+        {
+          id: 8,
+          title: "Пинк Пу",
+          imageSrc: "/images/pink.svg",
+          background: "#ffe1f0",
+          about:
+            "Пинк Пу — источник нежности и милоты. Этот символ поможет вам выразить вашу любовь и заботу.",
+        },
+        {
+          id: 9,
+          title: "Пельмешка",
+          imageSrc: "/images/dumpling.svg",
+          background: "#ffe1e1",
+          about:
+            "Пельмешка — символ домашнего уюта и семейных традиций. Он напомнит о вкусных моментах жизни.",
+        },
+        {
+          id: 10,
+          title: "Маска",
+          imageSrc: "/images/mask.svg",
+          background: "#c3fff4",
+          about:
+            "Маска — таинственный символ, который напоминает о маскарадах и непознанном. Она приглашает вас в мир фантазий и новых образов.",
+        },
+        {
+          id: 11,
+          title: "Движун",
+          imageSrc: "/images/cat.svg",
+          background: "#ffe1e1",
+          about:
+            "Как и первый Движун, этот символ подчеркивает важность движения и радости в жизни, напоминая о необходимости веселья и активности.",
+        },
+        {
+          id: 12,
+          title: "Полнолун",
+          imageSrc: "/images/polnolun.svg",
+          background: "#e7ecf3",
+          about:
+            "Полнолун олицетворяет мистическую и загадочную сторону ночи, призывая к размышлениям и обновлению.",
+        },
+        {
+          id: 13,
+          title: "Ааагонь",
+          imageSrc: "/images/fire.svg",
+          background: "#f2d7ff",
+          about:
+            "Этот символ огня символизирует внутренний свет, согревающий душу и поджигающий искру вдохновения в каждом из нас.",
+        },
+        {
+          id: 14,
+          title: "Ееедаа",
+          imageSrc: "/images/meal.svg",
+          background: "#c3ffc9",
+          about:
+            "Ееедаа напоминает о радости вкусной пищи и совместных приемах пищи, объединяющих друзей и семью.",
+        },
+        {
+          id: 15,
+          title: "На чиле",
+          imageSrc: "/images/chill.svg",
+          background: "#ffedcc",
+          about:
+            "На чиле призывает к моментам спокойствия и отдыха, напоминая о необходимости баланса между работой и личным временем.",
+        },
+        {
+          id: 16,
+          title: "Поп Дог",
+          imageSrc: "/images/dog.svg",
+          background: "#ffe1e1",
+          about:
+            "Поп Дог вдохновляет на бесстрашие и открытость новому, будучи символом модных тенденций и молодежной культуры.",
+        },
+        {
+          id: 17,
+          title: "Кить-коть",
+          imageSrc: "/images/cats.svg",
+          background: "#d9e8fb",
+          about:
+            "Кить-коть представляет собой грацию и независимость, напоминая о том, что в каждом из нас живет немного капризного, но очаровательного создания.",
+        },
+        {
+          id: 18,
+          title: "Пинк Пу",
+          imageSrc: "/images/pink.svg",
+          background: "#ffe1f0",
+          about:
+            "Пинк Пу наполнен чувственностью и теплотой, являясь напоминанием о необходимости заботиться о близких.",
+        },
+        {
+          id: 19,
+          title: "Пельмешка",
+          imageSrc: "/images/dumpling.svg",
+          background: "#ffe1e1",
+          about:
+            "Пельмешка — это символ домашнего тепла и семейного уюта, напоминая о традициях и кулинарных изысках.",
+        },
+        {
+          id: 20,
+          title: "Маска",
+          imageSrc: "/images/mask.svg",
+          background: "#c3fff4",
+          about:
+            "Маска подчеркивает многогранность личности и таинственную сторону каждого, приглашая к игре образов и ролей.",
+        },
+        {
+          id: 21,
+          title: "Движун",
+          imageSrc: "/images/cat.svg",
+          background: "#ffe1e1",
+          about:
+            "Этот Движун продолжает вдохновлять на активность и радость, напоминая о важности двигаться вперед с улыбкой.",
+        },
+        {
+          id: 22,
+          title: "Полнолун",
+          imageSrc: "/images/polnolun.svg",
+          background: "#e7ecf3",
+          about:
+            "Полнолун в этой итерации символизирует глубокую связь с природой и космосом, приглашая к раздумьям о величии вселенной.",
+        },
+        {
+          id: 23,
+          title: "Ааагонь",
+          imageSrc: "/images/fire.svg",
+          background: "#f2d7ff",
+          about:
+            "Огонь здесь продолжает греть и воодушевлять, будучи источником энергии и силы для преодоления трудностей.",
+        },
+        {
+          id: 24,
+          title: "Ееедаа",
+          imageSrc: "/images/meal.svg",
+          background: "#c3ffc9",
+          about:
+            "Ееедаа в этой версии напоминает о важности вкусных моментов в жизни, подчеркивая радость от общения за столом.",
+        },
+      ];
+
+      const containerTable = document.querySelector(".table__container");
+      const containerSlider = document.querySelector(".swiper-wrapper");
+
+      cards.forEach((card) => {
+        const cardBlock = `
+            <div class="cell" style="background: ${card.background}" >
+                <img class="cell__image" src="${card.imageSrc}" />
+                <h2 class="cell__title">${card.title}</h2>
+            </div>
+        `;
+        containerTable.innerHTML += cardBlock;
+
+        const sliderBlock = `
+        <div class="swiper-slide">
+                <img class="slider-image" src="${card.imageSrc}" />
+        </div>
+        `;
+
+        containerSlider.innerHTML += sliderBlock;
+      });
+
+      const swiper = new Swiper(".swiper", {
+        spaceBetween: 30,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        mousewheel: true,
+        keyboard: true,
+        on: {
+          slideChange: function () {
+            console.log(this);
+            const activeIndex = this.activeIndex;
+            const selectedCard = cards[activeIndex];
+            updateInfo(selectedCard);
+          },
+        },
+      });
+
+      const updateInfo = (card) => {
+        if (card) {
+          const containerInfo = document.querySelector(".info");
+          const infoBlock = `
+        <h1 class="info__title">${card.title}</h1>
+          <p class="info__subtitle">
+           ${card.about}
+          </p>
+        `;
+
+          containerInfo.innerHTML = infoBlock;
+          console.log(containerInfo);
+        }
+      };
+
+      updateInfo(cards[swiper.activeIndex]);
+
+    </script>
   </body>
 </html>
