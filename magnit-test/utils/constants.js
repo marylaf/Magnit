@@ -1,146 +1,195 @@
 export const cards = [
-    {
-      id: 1,
-      title: "Движун",
-      imageSrc: "/images/cat.svg",
-      background: "#ffe1e1",
-    },
-    {
-      id: 2,
-      title: "Полнолун",
-      imageSrc: "/images/polnolun.svg",
-      background: "#e7ecf3",
-    },
-    {
-      id: 3,
-      title: "Ааагонь",
-      imageSrc: "/images/fire.svg",
-      background: "#f2d7ff",
-    },
-    {
-      id: 4,
-      title: "Ееедаа",
-      imageSrc: "/images/meal.svg",
-      background: "#c3ffc9",
-    },
-    {
-      id: 5,
-      title: "На чиле",
-      imageSrc: "/images/chill.svg",
-      background: "#ffedcc",
-    },
-    {
-      id: 6,
-      title: "Поп Дог",
-      imageSrc: "/images/dog.svg",
-      background: "#ffe1e1",
-    },
-    {
-      id: 7,
-      title: "Кить-коть",
-      imageSrc: "/images/cats.svg",
-      background: "#d9e8fb",
-    },
-    {
-      id: 8,
-      title: "Пинк Пу",
-      imageSrc: "/images/pink.svg",
-      background: "#ffe1f0",
-    },
-    {
-      id: 9,
-      title: "Пельмешка",
-      imageSrc: "/images/dumpling.svg",
-      background: "#ffe1e1",
-    },
-    {
-      id: 10,
-      title: "Маска",
-      imageSrc: "/images/mask.svg",
-      background: "#c3fff4",
-    },
-    {
-      id: 11,
-      title: "Движун",
-      imageSrc: "/images/cat.svg",
-      background: "#ffe1e1",
-    },
-    {
-      id: 12,
-      title: "Полнолун",
-      imageSrc: "/images/polnolun.svg",
-      background: "#e7ecf3",
-    },
-    {
-      id: 13,
-      title: "Ааагонь",
-      imageSrc: "/images/fire.svg",
-      background: "#f2d7ff",
-    },
-    {
-      id: 14,
-      title: "Ееедаа",
-      imageSrc: "/images/meal.svg",
-      background: "#c3ffc9",
-    },
-    {
-      id: 15,
-      title: "На чиле",
-      imageSrc: "/images/chill.svg",
-      background: "#ffedcc",
-    },
-    {
-      id: 16,
-      title: "Поп Дог",
-      imageSrc: "/images/dog.svg",
-      background: "#ffe1e1",
-    },
-    {
-      id: 17,
-      title: "Кить-коть",
-      imageSrc: "/images/cats.svg",
-      background: "#d9e8fb",
-    },
-    {
-      id: 18,
-      title: "Пинк Пу",
-      imageSrc: "/images/pink.svg",
-      background: "#ffe1f0",
-    },
-    {
-      id: 19,
-      title: "Пельмешка",
-      imageSrc: "/images/dumpling.svg",
-      background: "#ffe1e1",
-    },
-    {
-      id: 20,
-      title: "Маска",
-      imageSrc: "/images/mask.svg",
-      background: "#c3fff4",
-    },
-    {
-      id: 21,
-      title: "Движун",
-      imageSrc: "/images/cat.svg",
-      background: "#ffe1e1",
-    },
-    {
-      id: 22,
-      title: "Полнолун",
-      imageSrc: "/images/polnolun.svg",
-      background: "#e7ecf3",
-    },
-    {
-      id: 23,
-      title: "Ааагонь",
-      imageSrc: "/images/fire.svg",
-      background: "#f2d7ff",
-    },
-    {
-      id: 24,
-      title: "Ееедаа",
-      imageSrc: "/images/meal.svg",
-      background: "#c3ffc9",
-    },
-  ];
+  {
+    id: 1,
+    title: "Движун",
+    imageSrc: "/images/cat.svg",
+    background: "#ffe1e1",
+    about:
+      "Танцевать где угодно и когда угодно — первое правило хорошего настроения от Движуна. Если вам немного взгрустнулось, то скорее лепите его на одежду и начинайте дэнсить",
+  },
+  
+  {
+    id: 2,
+    title: "Полнолун",
+    imageSrc: "/images/polnolun.svg",
+    background: "#e7ecf3",
+    about:
+      "Полнолун — идеальное время для загадывания желаний и планирования новых начинаний. Этот символ наполнит вас вдохновением и магией лунного света.",
+  },
+  {
+    id: 3,
+    title: "Ааагонь",
+    imageSrc: "/images/fire.svg",
+    background: "#f2d7ff",
+    about:
+      "Ааагонь символизирует страсть и энергию. Если вам нужен заряд бодрости или искра для вдохновения, этот огонёк поможет разжечь ваши идеи.",
+  },
+  {
+    id: 4,
+    title: "Ееедаа",
+    imageSrc: "/images/meal.svg",
+    background: "#c3ffc9",
+    about:
+      "Ееедаа — настоящий гастрономический рай. Этот символ предназначен для любителей вкусной еды и уютных семейных ужинов.",
+  },
+  {
+    id: 5,
+    title: "На чиле",
+    imageSrc: "/images/chill.svg",
+    background: "#ffedcc",
+    about:
+      "На чиле — ваш напоминание о том, что порой нужно просто расслабиться. Отдых и покой — ключевые элементы для гармонии.",
+  },
+  {
+    id: 6,
+    title: "Поп Дог",
+    imageSrc: "/images/dog.svg",
+    background: "#ffe1e1",
+    about:
+      "Поп Дог — ваш верный друг в мире моды и стиля. Он всегда подскажет, как быть на пике поп-культуры.",
+  },
+  {
+    id: 7,
+    title: "Кить-коть",
+    imageSrc: "/images/cats.svg",
+    background: "#d9e8fb",
+    about:
+      "Кить-коть — символ мягкости и изящества. Он приносит уют и гармонию в любое пространство.",
+  },
+  {
+    id: 8,
+    title: "Пинк Пу",
+    imageSrc: "/images/pink.svg",
+    background: "#ffe1f0",
+    about:
+      "Пинк Пу — источник нежности и милоты. Этот символ поможет вам выразить вашу любовь и заботу.",
+  },
+  {
+    id: 9,
+    title: "Пельмешка",
+    imageSrc: "/images/dumpling.svg",
+    background: "#ffe1e1",
+    about:
+      "Пельмешка — символ домашнего уюта и семейных традиций. Он напомнит о вкусных моментах жизни.",
+  },
+  {
+    id: 10,
+    title: "Маска",
+    imageSrc: "/images/mask.svg",
+    background: "#c3fff4",
+    about:
+      "Маска — таинственный символ, который напоминает о маскарадах и непознанном. Она приглашает вас в мир фантазий и новых образов.",
+  },
+  {
+    id: 11,
+    title: "Движун",
+    imageSrc: "/images/cat.svg",
+    background: "#ffe1e1",
+    about:
+      "Как и первый Движун, этот символ подчеркивает важность движения и радости в жизни, напоминая о необходимости веселья и активности.",
+  },
+  {
+    id: 12,
+    title: "Полнолун",
+    imageSrc: "/images/polnolun.svg",
+    background: "#e7ecf3",
+    about:
+      "Полнолун олицетворяет мистическую и загадочную сторону ночи, призывая к размышлениям и обновлению.",
+  },
+  {
+    id: 13,
+    title: "Ааагонь",
+    imageSrc: "/images/fire.svg",
+    background: "#f2d7ff",
+    about:
+      "Этот символ огня символизирует внутренний свет, согревающий душу и поджигающий искру вдохновения в каждом из нас.",
+  },
+  {
+    id: 14,
+    title: "Ееедаа",
+    imageSrc: "/images/meal.svg",
+    background: "#c3ffc9",
+    about:
+      "Ееедаа напоминает о радости вкусной пищи и совместных приемах пищи, объединяющих друзей и семью.",
+  },
+  {
+    id: 15,
+    title: "На чиле",
+    imageSrc: "/images/chill.svg",
+    background: "#ffedcc",
+    about:
+      "На чиле призывает к моментам спокойствия и отдыха, напоминая о необходимости баланса между работой и личным временем.",
+  },
+  {
+    id: 16,
+    title: "Поп Дог",
+    imageSrc: "/images/dog.svg",
+    background: "#ffe1e1",
+    about:
+      "Поп Дог вдохновляет на бесстрашие и открытость новому, будучи символом модных тенденций и молодежной культуры.",
+  },
+  {
+    id: 17,
+    title: "Кить-коть",
+    imageSrc: "/images/cats.svg",
+    background: "#d9e8fb",
+    about:
+      "Кить-коть представляет собой грацию и независимость, напоминая о том, что в каждом из нас живет немного капризного, но очаровательного создания.",
+  },
+  {
+    id: 18,
+    title: "Пинк Пу",
+    imageSrc: "/images/pink.svg",
+    background: "#ffe1f0",
+    about:
+      "Пинк Пу наполнен чувственностью и теплотой, являясь напоминанием о необходимости заботиться о близких.",
+  },
+  {
+    id: 19,
+    title: "Пельмешка",
+    imageSrc: "/images/dumpling.svg",
+    background: "#ffe1e1",
+    about:
+      "Пельмешка — это символ домашнего тепла и семейного уюта, напоминая о традициях и кулинарных изысках.",
+  },
+  {
+    id: 20,
+    title: "Маска",
+    imageSrc: "/images/mask.svg",
+    background: "#c3fff4",
+    about:
+      "Маска подчеркивает многогранность личности и таинственную сторону каждого, приглашая к игре образов и ролей.",
+  },
+  {
+    id: 21,
+    title: "Движун",
+    imageSrc: "/images/cat.svg",
+    background: "#ffe1e1",
+    about:
+      "Этот Движун продолжает вдохновлять на активность и радость, напоминая о важности двигаться вперед с улыбкой.",
+  },
+  {
+    id: 22,
+    title: "Полнолун",
+    imageSrc: "/images/polnolun.svg",
+    background: "#e7ecf3",
+    about:
+      "Полнолун в этой итерации символизирует глубокую связь с природой и космосом, приглашая к раздумьям о величии вселенной.",
+  },
+  {
+    id: 23,
+    title: "Ааагонь",
+    imageSrc: "/images/fire.svg",
+    background: "#f2d7ff",
+    about:
+      "Огонь здесь продолжает греть и воодушевлять, будучи источником энергии и силы для преодоления трудностей.",
+  },
+  {
+    id: 24,
+    title: "Ееедаа",
+    imageSrc: "/images/meal.svg",
+    background: "#c3ffc9",
+    about:
+      "Ееедаа в этой версии напоминает о важности вкусных моментов в жизни, подчеркивая радость от общения за столом.",
+  },
+];
