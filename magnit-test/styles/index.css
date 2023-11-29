@@ -226,11 +226,11 @@
   }
 
   .swiper-button-prev {
-    left: -95px;
+    left: -100px !important;
   }
 
   .swiper-button-next {
-    right: -95px;
+    right: -100px !important;
   }
 
   .table__container {
@@ -301,12 +301,12 @@
 
   .swiper-button-prev {
     background-image: url("/images/left-small.svg");
-    left: 0;
+    left: 0 !important;
   }
 
   .swiper-button-next {
     background-image: url("/images/right-small.svg");
-    right: 0;
+    right: 0 !important;
   }
 
   .table__container {
